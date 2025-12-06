@@ -82,6 +82,7 @@ public class Main
 
            if (!inputFile.exists() || inputFile.isDirectory()) {
                System.out.println("❌ Error: File not found or is a directory: " + inputFileName);
+               return;
            }
 
            //Read entire file into memory
@@ -186,7 +187,7 @@ public class Main
 
             //Prints out the decrypted file as plaintext
             System.out.println("\n✅ File decrypted successfully!");
-            System.out.println("Encrypted file saved as: plaintext.txt");
+            System.out.println("Decrypted file saved as: plaintext.txt");
 
         }
         catch (Exception e)
