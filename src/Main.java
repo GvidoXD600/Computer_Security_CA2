@@ -193,7 +193,7 @@ public class Main
         }
         catch (Exception e)
         {
-            System.out.println("❌ An Error during decryption: " + e.getMessage());
+            System.out.println("❌ An Error occurred during decryption: " + e.getMessage());
         }
     }
 
