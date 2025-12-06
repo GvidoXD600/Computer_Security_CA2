@@ -155,6 +155,7 @@ public class Main
             System.out.println("Enter the AES Key used for encryption");
             String keyBase64 = sc.nextLine().trim();
 
+            // Decode the base64 string to bytes and wrap them as an AES SecretKey
             byte[] decodedKey = Base64.getDecoder().decode(keyBase64);
             SecretKey secretKey = new SecretKeySpec(decodedKey, "AES");
 
